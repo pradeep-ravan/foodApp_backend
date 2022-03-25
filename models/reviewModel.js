@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-let { DB_LINK } = process.env ||  require("../secrets");
+let { DB_LINK } = process.env;
 mongoose.connect(DB_LINK,{useNewUrlParser: true,
         
     useUnifiedTopology: true}).then(function (db) {
