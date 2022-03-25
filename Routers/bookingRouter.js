@@ -6,7 +6,7 @@ const bookingModel = require("../models/bookingModel");
 const userModel = require("../models/userModel");
 const factory = require("../helpers/factory");
 const Razorpay = require("razorpay");
-let { KEY_ID, KEY_SECRET } = require("../../../secrets");
+let { KEY_ID, KEY_SECRET } = require("../secrets");
 var razorpay = new Razorpay({
     key_id: KEY_ID,
     key_secret: KEY_SECRET

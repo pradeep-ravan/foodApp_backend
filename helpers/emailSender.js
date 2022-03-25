@@ -1,6 +1,6 @@
 
 const nodemailer = require("nodemailer");
-const config = require("../../../secrets");
+const config = require("../secrets");
 // async..await is not allowed in global scope, must use a wrapper
 module.exports = async function main(token, userEmail) {
   // Generate test SMTP service account from ethereal.email
