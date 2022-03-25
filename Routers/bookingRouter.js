@@ -1,7 +1,7 @@
 const express = require("express");
 const bookingRouter = express.Router();
 // const ReviewModel = require("../models/reviewModel");
-const protectRoute  = require("../Routers/authHelper");
+const { protectRoute }  = require("../Routers/utilFns");
 const bookingModel = require("../models/bookingModel");
 const userModel = require("../models/userModel");
 const factory = require("../helpers/factory");
