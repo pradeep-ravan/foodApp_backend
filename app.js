@@ -53,7 +53,8 @@ app.use('/api/booking', bookingRouter);
 // //template routes
 // app.get("/api/user/:id", getUserById);
 //localhost:8080 ?
-app.listen(8080,function(){
+//heroku physical -> multiple server run
+app.listen(process.env.PORT||8080,function(){
     console.log("server started");
 })
 // /port , ip, localhost

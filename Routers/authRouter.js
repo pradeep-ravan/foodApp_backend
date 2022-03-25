@@ -1,7 +1,7 @@
 const userModel = require("../models/userModel");
 const express= require("express");
 const jwt = require("jsonwebtoken");
-const {JWT_KEY} = require("../secrets");
+const {JWT_KEY} = process.env ||  require("../secrets");
 const authRouter = express.Router();
 let emailSender=require("./../helpers/emailSender");
 authRouter
